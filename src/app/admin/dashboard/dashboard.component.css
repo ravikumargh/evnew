@@ -1,0 +1,40 @@
+.graph{    background: #e4edf6; border-radius: 20px;}
+
+::ng-deep .advanced-pie-legend .legend-items-container {
+    width: 100%;
+    display: none!important;
+}
+
+
+.grap_content{     padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1px;}
+
+.grap_content .icon{    padding: 10px 2px 2px 2px;
+    width: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;}
+
+.healthy{
+    background-color: #0057ff;
+
+}
+
+.def{
+    background-color: #ff008a;
+    
+}
+
+.nosignal{
+    background-color: #e8c52b;
+    
+}
+
+.grap_content .count{
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.no_border{ border: none;}

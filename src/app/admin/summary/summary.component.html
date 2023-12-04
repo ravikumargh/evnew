@@ -1,0 +1,135 @@
+<app-header></app-header>
+
+<div class="container-fluid d-flex justify-content-between align-items-center w-100 gap_bdy">
+<main class="main_container">
+
+    <div class="row">
+        <div class="col-md-5 col-xs-12">
+       <div class="row">
+        <div class="col-1">
+            <app-nav></app-nav>
+        </div>
+        <div class="col-11">
+            <div class="right_snet">
+                <div class="head_text">
+                    <h1 class="one">Clark Kent's</h1>
+                    <h1 class="two">Vehicle Summary</h1>
+                </div>
+
+                <div class="prod_image text-center">
+                    <img src="../../../assets/images/Img-Bg-Battery.png"/>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="card_details bx_s2">
+                            <div class="d-flex justify-content-between ">
+        
+                                <div class="icon"><span class="icon-icon-Speed text-success" ></span></div>
+                                <div class="text-end">
+                                    <div class="error-name">Speed</div>
+                                    <div class="count">50KM</div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="card_details bx_s2">
+                            <div class="d-flex justify-content-between ">
+        
+                                <div class="icon"><span class="icon-icon-Travelled text-success" ></span></div>
+                                <div class="text-end">
+                                    <div class="error-name">Travelled</div>
+                                    <div class="count">12KM</div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+
+                        <div class="card_details bx_s2">
+                            <div class="justify-content-between ">
+        
+                               
+                                <div class="text-center">
+                                    <div class="error-name">Voltage</div>
+                                    <div class="count">130</div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+
+                        <div class="card_details bx_s2">
+                            <div class="justify-content-between ">
+        
+                             
+                                <div class="text-center">
+                                    <div class="error-name">Temprature</div>
+                                    <div class="count">130</div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+
+             </div>
+        </div>
+       </div>
+
+                
+               
+
+               
+                
+          
+
+        </div>
+        <div class="col-md-7 col-xs-12">
+           <div class="right_live">
+             <h2>
+                BATTERY HEALTH INDICATOR
+             </h2>
+             <div class="row">
+                <div class="col-4">
+                    <div class="card_ind bordeRight"> 
+                    <div class="row">
+                        <div class="col-6"><span>SOC</span> <strong>81.5</strong></div>
+                        <div class="col-6 text-end"><strong>81.5</strong><span>SOC</span></div>
+                    </div>
+                    </div>
+                    <div class="card_ind bordertop0 bordeLeft"> 
+                        <div class="row">
+                            <div class="col-6"><span>SOC</span> <strong>81.5</strong></div>
+                            <div class="col-6 text-end"><strong>81.5</strong><span>SOC</span></div>
+                        </div>
+                        </div>
+                        <div class="card_ind bordertop0 bordeRight"> 
+                            <div class="row">
+                                <div class="col-6"><span>SOC</span> <strong>81.5</strong></div>
+                                <div class="col-6 text-end"><strong>81.5</strong><span>SOC</span></div>
+                            </div>
+                            </div>
+                </div>
+                <div class="col-8"> </div>
+             </div>
+
+             <div class="row mt-3">
+                <div class="col-12">
+                    <div *ngFor="let numberdate of numberdates; let i = index" class="indicator_values btn" ngClass="selected">{{ i + 1 }}</div>
+                </div>
+                
+             </div>
+           </div>
+         
+        </div>
+     
+      </div>
+</main>
+</div>

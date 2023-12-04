@@ -1,0 +1,260 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --header-bg:#fff;
+    --body-container-bg:#eef5fd
+  }
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+header{
+    background-color: var(--header-bg);
+    height: 70px;
+    width: 100%;
+}
+
+.logo{
+    margin-top:15px
+}
+
+.form-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.search input{
+    border-radius: 50px;
+    margin-right: 10px;
+    background: #eef5fd;
+    border: navajowhite;
+    height: 30px;
+    padding-left: 34px;
+}
+
+
+.search span{position: absolute;
+    margin-left: 10px;
+    margin-top: 7px;}
+
+.search input:focus-visible {
+        outline: #fcb813 solid 2px;
+    }
+
+.profile{
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+
+}
+
+.gap_bdy{    padding-right: 20px;
+    padding-left: 20px;}
+
+.main_container{     
+    
+    background-color: var(--body-container-bg);
+    /* height: calc(100vh - 100px); */
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* Three columns of equal width */
+    gap: 10px; /* Gap between grid items */
+}
+
+.grid-item {
+
+    padding: 5px;
+}
+
+.medium {
+    grid-column: span 3; /* Span across 2 columns */
+}
+
+.larger {
+    grid-column: span 5; /* Span across 2 columns */
+}
+
+.smaller {
+    grid-column: span 1; /* Span across 2 columns */
+}
+
+.head_text .one {
+ font-weight: 200;
+}
+
+.head_text .two{
+    font-weight: 600;
+    font-size: 35px;
+   }
+
+.head_text h1 {
+    font-size: 30px;;
+    
+}
+
+.card_details{
+    background: #ebf1fd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+   
+
+}
+
+.bx_s1{
+    -webkit-box-shadow: inset 64px 47px 80px -33px rgba(255,255,255,1);
+    -moz-box-shadow: inset 64px 47px 80px -33px rgba(255,255,255,1);
+    box-shadow: inset 64px 47px 80px -33px rgba(255,255,255,1);
+}
+
+.bx_s2{
+    -webkit-box-shadow: inset -92px -61px 80px -33px rgba(255,255,255,1);
+    -moz-box-shadow: inset -92px -61px 80px -33px rgba(255,255,255,1);
+    box-shadow: inset -92px -61px 80px -33px rgba(255,255,255,1);
+}
+
+.card_details .icon{
+    font-size: 30px;
+    color: #ff87ce;
+}
+
+.card_details .icon_1{
+  color: #ff87ce;
+}
+
+.card_details .icon_2{
+    color: #f5c796;
+  }
+
+
+
+.card_details .count{
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.grid_over{border: 1px solid #e4edf6;
+    border-radius: 10px;}
+
+    .side_bar{    vertical-align: middle;
+        display: table-cell;
+        height: calc(100vh - 160px);}
+
+    .side_bar button{
+        border: 1px solid #ccc;
+        background: transparent;
+        padding: 10px;
+        width: 40px;
+        display: block;
+        margin-bottom: 10px;
+        height: 40px;
+        border-radius: 50px;
+    }
+
+    .side_bar button:hover{
+        background: #04b044;
+        color:#fff;
+
+    }
+
+    .side_bar button.active{
+        background: #04b044;
+        color:#fff;
+
+    }
+
+    .user_details{
+        background: #fafbff;
+        border-radius: 10px;
+        height: calc(100vh - 150px);
+    }
+
+
+    .table_header{    padding: 10px 20px;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;}
+
+        .table_header .span_1{
+        font-size: 14px;
+
+    }
+    
+    .table_header .span_2{
+        font-size: 12px;
+        font-weight:400;    }
+    
+    .userpic{ width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        margin-right: 10px;
+        border: 1px solid #ccc;}
+
+    .userpic img{ width: 100%;}
+
+    .legend{    margin-right: 5px;
+        border-radius: 50px;}
+
+
+    .col_status{
+        background-color: #ff87ce!important;
+    }
+    
+
+
+    .advanced-pie {
+        display: block!important;
+        float: none!important;
+        width: 300px!important;
+    }
+    
+
+    .advanced-pie-legend {
+        float: left;
+        position: relative;
+        top: 50%;
+        transform: translateY(-156%)!important;
+      
+    }
+
+    .advanced-pie-legend .total-value {
+        font-size: 27px!important;
+        left: 75px;
+        position: relative!important;
+        top: -5px!important;
+        width: 210px;
+        text-align: center;
+    }
+
+
+    .advanced-pie-legend .total-label {
+        font-size: 24px;
+        margin-bottom: 19px!important;
+        position: relative!important;;
+        top: -72px!important;;
+        left: 17%!important;;
+    }
+
+    .advanced-pie-legend-wrapper {
+        height: auto!important;
+    }
