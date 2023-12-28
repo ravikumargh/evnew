@@ -5,19 +5,25 @@ import { SummaryComponent } from './summary/summary.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { UserlistComponent } from './userlist/userlist.component';
+import { GmapComponent } from './gmap/gmap.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
     SummaryComponent,
-    UserlistComponent
+    UserlistComponent,
+    GmapComponent
+
   ],
 
   imports: [
     CommonModule,
     SharedModule,
     NgxChartsModule,
+    GoogleMapsModule
 
   ],
 
