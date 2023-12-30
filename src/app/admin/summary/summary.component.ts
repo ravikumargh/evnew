@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { DataService } from 'src/app/data.service';
+import { Cell } from 'src/app/entity/cell';
+import { Detail } from 'src/app/entity/detail';
 
 @Component({
   selector: 'app-summary',
@@ -6,9 +9,63 @@ import { Component } from '@angular/core';
   styleUrls: ['./summary.component.css']
 })
 export class SummaryComponent {
+  data: any;
+  details: Detail[] = [];
+  constructor(private dataService: DataService) { }
 
+  ngOnInit(): void {
+    this.getData();
+  }
 
-  numberdates: number[] = [1, 2, 3, 4, 5, 6, 7, 9 , 10 , 11 , 12, 13 , 14 , 15 , 16 , 17 , 18, 19 , 20 , 21, 22, 23, 24, 25, 26, 27, 28, 29, ];
+  getData(): void {
+    this.dataService.getData().subscribe(
+      (response) => {
+        this.data = response;
+        console.log('Data:', this.data);
+        this.processDetails();
+      },
+      (error) => {
+        console.error('Error fetching data:', error);
+      }
+    );
+  }
+
+  processDetails() {
+    this.data.Items.forEach((item: any) => {
+      console.log('item:', item);
+      const detail = new Detail();
+      detail.charging = item.device_data.M.charging.M.value.S;
+      detail.collectionTime = item.device_data.M.collectionTime.M.value.S;
+      detail.cycleCount = item.device_data.M.cycleCount.M.value.S;
+      detail.discharging = item.device_data.M.discharging.M.value.S;
+      detail.driveMode = item.device_data.M.driveMode.M.value.S;
+      detail.fullCapacity = item.device_data.M.fullCapacity.M.value.S;
+      detail.latitude = item.device_data.M.latitude.M.value.S;
+      detail.longitude = item.device_data.M.longitude.M.value.S;
+      detail.odometer = item.device_data.M.odometer.M.value.S;
+      detail.packCurrent = item.device_data.M.packCurrent.M.value.S;
+      detail.packVoltage = item.device_data.M.packVoltage.M.value.S;
+      detail.remainingCapacity = item.device_data.M.remainingCapacity.M.value.S;
+      detail.soc = item.device_data.M.soc.M.value.S;
+      detail.speed = item.device_data.M.speed.M.value.S;
+      detail.temp = item.device_data.M.temp.M.value.S;
+      detail.vehicleIdentifier = item.device_data.M.vehicleIdentifier.S;
+      detail.vehicleStatus = item.device_data.M.vehicleStatus.M.value.S;
+      detail.cells = [];
+      this.processCells(detail, item.device_data.M.cellsData.L)
+      this.details.push(detail);
+    });
+    console.log('Details', this.details);
+  }
+  processCells(details: any, cellsData: any) {
+    cellsData.forEach((element: any) => {
+      const cell = new Cell();
+      cell.id = element.M.id.M.value.S;
+      cell.status = element.M.status.BOOL;
+      cell.voltage = element.M.voltage.M.value.S;
+      details.cells.push(cell);
+    });
+  }
 
 
 }

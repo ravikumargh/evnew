@@ -118,15 +118,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8"> 
+                        <div class="col-8">
                             <app-gmap></app-gmap>
                         </div>
                     </div>
 
                     <div class="row mt-3">
                         <div class="col-12">
-                            <div *ngFor="let numberdate of numberdates; let i = index" class="indicator_values btn"
-                                ngClass="selected">{{ i + 1 }}</div>
+                            <div *ngFor="let cell of details[0].cells; let i = index" class="indicator_values btn"
+                                [ngClass]="cell.status ? 'selected' : 'bg-light-danger'"
+                                title="{{cell.voltage}}">{{ i + 1 }}</div>
                         </div>
 
                     </div>

@@ -7,6 +7,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { UserlistComponent } from './userlist/userlist.component';
 import { GmapComponent } from './gmap/gmap.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -23,7 +24,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
     CommonModule,
     SharedModule,
     NgxChartsModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    HttpClientModule
 
   ],
 

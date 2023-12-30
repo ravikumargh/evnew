@@ -1,0 +1,1660 @@
+{
+    "Count": 2,
+    "Items": [
+        {
+            "device_data": {
+                "M": {
+                    "temp": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "28.31"
+                            }
+                        }
+                    },
+                    "collectionTime": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "123456"
+                            }
+                        }
+                    },
+                    "odometer": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "75"
+                            }
+                        }
+                    },
+                    "packVoltage": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "6.0"
+                            }
+                        }
+                    },
+                    "soc": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "50"
+                            }
+                        }
+                    },
+                    "latitude": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "17.123400"
+                            }
+                        }
+                    },
+                    "charging": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "1"
+                            }
+                        }
+                    },
+                    "speed": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "60"
+                            }
+                        }
+                    },
+                    "driveMode": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "4"
+                            }
+                        }
+                    },
+                    "vehicleIdentifier": {
+                        "S": "VEERON_IOT"
+                    },
+                    "discharging": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "0"
+                            }
+                        }
+                    },
+                    "cellsData": {
+                        "L": [
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "1"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "2"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "4"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "5"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "6"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "7"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "8"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "9"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "10"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "11"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "12"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "13"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "14"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "15"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "16"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "17"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "18"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "19"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "20"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "21"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "22"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "23"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "24"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "cycleCount": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "250"
+                            }
+                        }
+                    },
+                    "packCurrent": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "2.0"
+                            }
+                        }
+                    },
+                    "remainingCapacity": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "4000"
+                            }
+                        }
+                    },
+                    "fullCapacity": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "5000"
+                            }
+                        }
+                    },
+                    "longitude": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "12.712300"
+                            }
+                        }
+                    },
+                    "vehicleStatus": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "1"
+                            }
+                        }
+                    }
+                }
+            },
+            "device_id": {
+                "N": "22"
+            },
+            "sample_time": {
+                "N": "1700620694615"
+            }
+        },
+        {
+            "device_data": {
+                "M": {
+                    "temp": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "28.31"
+                            }
+                        }
+                    },
+                    "collectionTime": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "123456"
+                            }
+                        }
+                    },
+                    "odometer": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "75"
+                            }
+                        }
+                    },
+                    "packVoltage": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "6.0"
+                            }
+                        }
+                    },
+                    "soc": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "50"
+                            }
+                        }
+                    },
+                    "latitude": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "17.123400"
+                            }
+                        }
+                    },
+                    "charging": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "1"
+                            }
+                        }
+                    },
+                    "speed": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "60"
+                            }
+                        }
+                    },
+                    "driveMode": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "4"
+                            }
+                        }
+                    },
+                    "vehicleIdentifier": {
+                        "S": "VEERON_IOT"
+                    },
+                    "discharging": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "0"
+                            }
+                        }
+                    },
+                    "cellsData": {
+                        "L": [
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "1"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "2"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "4"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "5"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "6"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "7"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "8"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "9"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "10"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "11"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "12"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "13"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "14"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "15"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "16"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "17"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "18"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "19"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "20"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "21"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "22"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "23"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            },
+                            {
+                                "M": {
+                                    "id": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "24"
+                                            }
+                                        }
+                                    },
+                                    "voltage": {
+                                        "M": {
+                                            "isLosslessNumber": {
+                                                "BOOL": true
+                                            },
+                                            "value": {
+                                                "S": "3.12"
+                                            }
+                                        }
+                                    },
+                                    "status": {
+                                        "BOOL": true
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "cycleCount": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "250"
+                            }
+                        }
+                    },
+                    "packCurrent": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "2.0"
+                            }
+                        }
+                    },
+                    "remainingCapacity": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "4000"
+                            }
+                        }
+                    },
+                    "fullCapacity": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "5000"
+                            }
+                        }
+                    },
+                    "longitude": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "12.712300"
+                            }
+                        }
+                    },
+                    "vehicleStatus": {
+                        "M": {
+                            "isLosslessNumber": {
+                                "BOOL": true
+                            },
+                            "value": {
+                                "S": "1"
+                            }
+                        }
+                    }
+                }
+            },
+            "device_id": {
+                "N": "22"
+            },
+            "sample_time": {
+                "N": "1700620691856"
+            }
+        }
+    ],
+    "ScannedCount": 2
+}
