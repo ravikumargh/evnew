@@ -1,140 +1,136 @@
-
 <app-header></app-header>
 
 <div class="container-fluid d-flex justify-content-between align-items-center w-100 gap_bdy">
-<main class="main_container">
+    <main class="main_container">
 
-    <div class="row">
-        <div class="col-md-5 col-xs-12">
-            <div class="grid-container">
-                <div class="grid-item smaller">
+        <div class="row">
+            <div class="col-md-5 col-xs-12">
+                <div class="grid-container">
+                    <div class="grid-item smaller">
 
-                 <app-nav></app-nav>
+                        <app-nav></app-nav>
 
-                </div>
-
-
-                <div class="grid-item larger">
-                    <div class="head_text">
-                    <h1 class="one">EV Vehicle</h1>
-                    <h1 class="two">Dashboard</h1>
-                </div>
-
-                <div class="graph">
-                    <ngx-charts-advanced-pie-chart
-                    [view]="view"
-                    [scheme]="colorScheme"
-                    [results]="single"
-                    [gradient]="gradient">
-                  </ngx-charts-advanced-pie-chart>
-
-
-                  <div class="gra_lenends">
-                  
-                    <div class="grap_content">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
-                            <div class="icon healthy"><span class="icon-icon-Healthy " ></span></div>
-                            <div class="error-name mx-2"><strong>Healthy</strong></div>
-                        </div>
-                       
-                        <div class="text-end">
-                          
-                            <div class="count">130</div>
-                     
-                        </div>
-                       
                     </div>
-                </div>
 
-                <div class="grap_content">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
-                            <div class="icon def"><span class="icon-icon-Healthy " ></span></div>
-                            <div class="error-name mx-2"><strong>Defective</strong></div>
+
+                    <div class="grid-item larger">
+                        <div class="head_text">
+                            <h1 class="one">EV Vehicle</h1>
+                            <h1 class="two">Dashboard</h1>
                         </div>
-                       
-                        <div class="text-end">
-                          
-                            <div class="count">130</div>
-                     
-                        </div>
-                       
-                    </div>
-                </div>
+
+                        <div class="graph">
+                            <ngx-charts-advanced-pie-chart [view]="view" [scheme]="colorScheme" [results]="single"
+                                [gradient]="gradient">
+                            </ngx-charts-advanced-pie-chart>
 
 
-                <div class="grap_content no_border">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
-                            <div class="icon nosignal"><span class="icon-icon-Healthy"></span></div>
-                            <div class="error-name mx-2"><strong>No Signal</strong></div>
-                        </div>
-                       
-                        <div class="text-end">
-                          
-                            <div class="count">130</div>
-                     
-                        </div>
-                       
-                    </div>
-                </div>
+                            <div class="gra_lenends">
+
+                                <div class="grap_content">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon healthy"><span class="icon-icon-Healthy "></span></div>
+                                            <div class="error-name mx-2"><strong>Healthy</strong></div>
+                                        </div>
+
+                                        <div class="text-end">
+
+                                            <div class="count">{{dashboard.healthy}}</div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="grap_content">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon def"><span class="icon-icon-Healthy "></span></div>
+                                            <div class="error-name mx-2"><strong>Defective</strong></div>
+                                        </div>
+
+                                        <div class="text-end">
+
+                                            <div class="count">{{dashboard.defective}}</div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
 
 
-                
-               
-               
-                  </div>
-                  </div>
-                  
-                
-                </div>
+                                <div class="grap_content no_border">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon nosignal"><span class="icon-icon-Healthy"></span></div>
+                                            <div class="error-name mx-2"><strong>No Signal</strong></div>
+                                        </div>
 
-                <div class="grid-item grid_over medium">
+                                        <div class="text-end">
 
-                <div class="card_errors">
+                                            <div class="count">{{dashboard.nosignal}}</div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
 
 
-                    <div class="card_details bx_s2">
-                        <div class="d-flex justify-content-between ">
-    
-                            <div class="icon"><span class="icon-icon-Error text-success" ></span></div>
-                            <div class="text-end">
-                                <div class="error-name">All Erros</div>
-                                <div class="count">130</div>
-                         
+
+
+
                             </div>
-                           
                         </div>
-                       
+
+
                     </div>
 
-                <div *ngFor="let error of errors" class="card_details {{error.boxshdw}}">
-                    <div class="d-flex justify-content-between">
+                    <div class="grid-item grid_over medium">
 
-                        <div class="icon"><span class="{{error.icon}} {{error.iconcolor }}"></span></div>
-                        <div class="text-end">
-                            <div class="error-name">{{ error.errorname }}</div>
-                            <div class="count">{{ error.count }}</div>
-                     
-                            
+                        <div class="card_errors">
+
+
+                            <div class="card_details bx_s2">
+                                <div class="d-flex justify-content-between ">
+
+                                    <div class="icon"><span class="icon-icon-Error text-success"></span></div>
+                                    <div class="text-end">
+                                        <div class="error-name">All Erros</div>
+                                        <div class="count">{{dashboard.defective}}</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div *ngFor="let error of errors" class="card_details {{error.boxshdw}}">
+                                <div class="d-flex justify-content-between">
+
+                                    <div class="icon"><span class="{{error.icon}} {{error.iconcolor }}"></span></div>
+                                    <div class="text-end">
+                                        <div class="error-name">{{ error.errorname }}</div>
+                                        <div class="count">{{ error.count }}</div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
-                       
+
                     </div>
-                   
                 </div>
 
-                </div>
+            </div>
+            <div class="col-md-7 col-xs-12">
 
-                </div>
+                <app-userlist></app-userlist>
             </div>
 
         </div>
-        <div class="col-md-7 col-xs-12">
-           
-           <app-userlist></app-userlist>
-        </div>
-     
-      </div>
-</main>
+    </main>
 </div>

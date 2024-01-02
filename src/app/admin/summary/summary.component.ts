@@ -11,6 +11,7 @@ import { Detail } from 'src/app/entity/detail';
 export class SummaryComponent {
   data: any;
   details: Detail[] = [];
+  detail: Detail = new Detail();
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
@@ -23,11 +24,26 @@ export class SummaryComponent {
         this.data = response;
         console.log('Data:', this.data);
         this.processDetails();
+        this.detail = this.details[0];
+        this.recursiveCall();
       },
       (error) => {
         console.error('Error fetching data:', error);
       }
     );
+  }
+
+  recursiveCall(){
+    this.details.forEach((element, index) => {
+      console.log(element);
+      setTimeout(() => {
+        this.detail = this.details[index];
+        console.log('details ' + index, this.details); // No error
+      }, index * 3000);
+    });
+    setTimeout(() => {
+      this.recursiveCall();
+    }, this.details.length * 3000);
   }
 
   processDetails() {

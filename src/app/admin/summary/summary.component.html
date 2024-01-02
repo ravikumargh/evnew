@@ -28,7 +28,8 @@
                                             <div class="icon"><span class="icon-icon-Speed text-success"></span></div>
                                             <div class="text-end">
                                                 <div class="error-name">Speed</div>
-                                                <div class="count">50KM</div>
+                                                <span class="count">{{detail.temp}} </span> 
+                                                <span>km/hr</span>
                                             </div>
                                         </div>
 
@@ -42,7 +43,8 @@
                                             </div>
                                             <div class="text-end">
                                                 <div class="error-name">Travelled</div>
-                                                <div class="count">12KM</div>
+                                                <span class="count">{{detail.odometer}}</span>
+                                                <span> km</span>
                                             </div>
                                         </div>
 
@@ -56,7 +58,7 @@
 
                                             <div class="text-center">
                                                 <div class="error-name">Voltage</div>
-                                                <div class="count">130</div>
+                                                <div class="count">{{detail.packVoltage}}</div>
                                             </div>
                                         </div>
 
@@ -70,7 +72,7 @@
 
                                             <div class="text-center">
                                                 <div class="error-name">Temprature</div>
-                                                <div class="count">130</div>
+                                                <div class="count">{{detail.temp}}</div>
                                             </div>
                                         </div>
 
@@ -101,20 +103,20 @@
                         <div class="col-4">
                             <div class="card_ind bordeRight">
                                 <div class="row">
-                                    <div class="col-6"><span>SOC</span> <strong>81.5</strong></div>
-                                    <div class="col-6 text-end"><strong>81.5</strong><span>SOC</span></div>
+                                    <div class="col-6"><span>SOC</span> <strong>{{detail.soc}} %</strong></div>
+                                    <div class="col-6 text-end"><strong>{{detail.remainingCapacity}}</strong><span>R. CAP</span></div>
                                 </div>
                             </div>
                             <div class="card_ind bordertop0 bordeLeft">
                                 <div class="row">
-                                    <div class="col-6"><span>SOC</span> <strong>81.5</strong></div>
-                                    <div class="col-6 text-end"><strong>81.5</strong><span>SOC</span></div>
+                                    <div class="col-6"><span>Gear</span> <strong>{{detail.driveMode}}</strong></div>
+                                    <div class="col-6 text-end"><strong>{{detail.fullCapacity}}</strong><span>F. CAP</span></div>
                                 </div>
                             </div>
                             <div class="card_ind bordertop0 bordeRight">
                                 <div class="row">
-                                    <div class="col-6"><span>SOC</span> <strong>81.5</strong></div>
-                                    <div class="col-6 text-end"><strong>81.5</strong><span>SOC</span></div>
+                                    <div class="col-6"><span>Cycles</span> <strong>{{detail.cycleCount}}</strong></div>
+                                    <div class="col-6 text-end"><strong>{{detail.packCurrent}}</strong><span>Current</span></div>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +127,7 @@
 
                     <div class="row mt-3">
                         <div class="col-12">
-                            <div *ngFor="let cell of details[0].cells; let i = index" class="indicator_values btn"
+                            <div *ngFor="let cell of detail.cells; let i = index" class="indicator_values btn"
                                 [ngClass]="cell.status ? 'selected' : 'bg-light-danger'"
                                 title="{{cell.voltage}}">{{ i + 1 }}</div>
                         </div>
