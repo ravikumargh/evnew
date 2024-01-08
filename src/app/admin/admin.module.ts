@@ -8,6 +8,7 @@ import { UserlistComponent } from './userlist/userlist.component';
 import { GmapComponent } from './gmap/gmap.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HttpClientModule } from '@angular/common/http';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 
 
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     SummaryComponent,
     UserlistComponent,
-    GmapComponent
+    GmapComponent,
+    PieChartComponent
 
   ],
 

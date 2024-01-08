@@ -58,7 +58,9 @@
 
                                             <div class="text-center">
                                                 <div class="error-name">Voltage</div>
-                                                <div class="count">{{detail.packVoltage}}</div>
+                                                <div class="count"
+                                                    [ngClass]="detail.packVoltage == errorConfig.voltage ? 'text-danger' : ''"
+                                                >{{detail.packVoltage}}</div>
                                             </div>
                                         </div>
 
@@ -103,8 +105,8 @@
                         <div class="col-4">
                             <div class="card_ind bordeRight">
                                 <div class="row">
-                                    <div class="col-6"><span>SOC</span> <strong>{{detail.soc}} %</strong></div>
-                                    <div class="col-6 text-end"><strong>{{detail.remainingCapacity}}</strong><span>R. CAP</span></div>
+                                    <div class="col-6" [ngClass]="detail.soc == errorConfig.soc ? 'text-danger' : ''" ><span>SOC</span> <strong>{{detail.soc}} %</strong></div>
+                                    <div class="col-6 text-end" [ngClass]="detail.remainingCapacity <= errorConfig.remainingCapacity ? 'text-danger' : ''" ><strong>{{detail.remainingCapacity}}</strong><span>R. CAP</span></div>
                                 </div>
                             </div>
                             <div class="card_ind bordertop0 bordeLeft">
@@ -115,8 +117,10 @@
                             </div>
                             <div class="card_ind bordertop0 bordeRight">
                                 <div class="row">
-                                    <div class="col-6"><span>Cycles</span> <strong>{{detail.cycleCount}}</strong></div>
-                                    <div class="col-6 text-end"><strong>{{detail.packCurrent}}</strong><span>Current</span></div>
+                                    <div class="col-6" [ngClass]="detail.cycleCount >= errorConfig.cycles ? 'text-danger' : ''"><span>Cycles</span> <strong>{{detail.cycleCount}}</strong></div>
+                                    <div class="col-6 text-end"
+                                    [ngClass]="detail.packCurrent == errorConfig.current ? 'text-danger' : ''"
+                                    ><strong>{{detail.packCurrent}}</strong><span>Current</span></div>
                                 </div>
                             </div>
                         </div>

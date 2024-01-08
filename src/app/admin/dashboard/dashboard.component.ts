@@ -19,17 +19,19 @@ import { ErrorConfig } from 'src/app/entity/errorConfig';
 export class DashboardComponent {
 
   single: any[] | undefined;
-  view: [number, number] = [1200, 300];
+  view: [number, number] = [800, 300];
 
   gradient: boolean = true;
   showLegend: boolean = true;
   showLabels: boolean = true;
   isDoughnut: boolean = false;
-
+  
   dashboard = new Dashboard();
   errorConfig = new ErrorConfig();
-
+  
   data: any;
+  chartdata: any;
+  userdata: any;
 
   colorScheme: Color = {
     domain: ['#0057ff', '#fd0188', '#C7B42C', '#AAAAAA'],
@@ -41,11 +43,13 @@ export class DashboardComponent {
 
   constructor(private dataService: DataService) {
     this.getData();
+    this.getChartData();
+    this.getUserData();
     Object.assign(this, { single });
-    this.dashboard.total = 100;
-    this.dashboard.healthy = 20;
-    this.dashboard.nosignal = 30;
-    this.dashboard.defective = 40;
+    this.dashboard.total = 0;
+    this.dashboard.healthy = 1;
+    this.dashboard.nosignal = 1;
+    this.dashboard.defective = 0;
 
     this.dashboard.cells = 0;
     this.dashboard.soc = 0;
@@ -107,10 +111,26 @@ export class DashboardComponent {
 
 
     ]
-    single[0].value = this.dashboard.healthy;
-    single[1].value = this.dashboard.defective;
-    single[2].value = this.dashboard.nosignal;
-    console.log(single);
+    
+  }
+  getChartData(): void {
+    this.dataService.getChartData().subscribe(
+      (response) => {
+        this.chartdata = response;
+        console.log('Data:', this.chartdata);
+        this.validateChartData();
+      },
+      (error) => {
+        console.error('Error fetching data:', error);
+      }
+    );
+  }
+  validateChartData() {
+    
+    this.chartdata[0].value = this.dashboard.healthy;
+    this.chartdata[1].value = this.dashboard.defective;
+    this.chartdata[2].value = this.dashboard.nosignal;
+    console.log(this.chartdata);
   }
   getData(): void {
     this.dataService.getData().subscribe(
@@ -148,8 +168,22 @@ export class DashboardComponent {
         
       }
     })
+    // this.dashboard.total = this.dashboard.healthy + this.dashboard.defective + this.dashboard.nosignal
 
+     
   }
+  getUserData(): void {
+    this.dataService.getUserData().subscribe(
+      (response) => {
+        this.userdata = response;
+        console.log('User Data:', this.userdata);
+      },
+      (error) => {
+        console.error('Error fetching data:', error);
+      }
+    );
+  }
+
 
   validateError(item: any, errorType: string, config: number) {
     if (item.M.value.S == config) {

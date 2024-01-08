@@ -8,21 +8,27 @@
     <div class="table">
       <div class="table-row row m-0">
         <div class="table-row-column table-row-index col-md-1 col-sm-12">No</div>
-        <div class="table-row-column table-center col-md-2 col-sm-12">Vehicle Name</div>
+        <div class="table-row-column table-center col-md-2 col-sm-12">Vehicle</div>
         <div class="table-row-column table-center col-md-3 col-sm-12">Owner Name</div>
-        <div class="table-row-column table-center col-md-2 col-sm-12">Phone</div>
+        <div class="table-row-column table-center col-md-3 col-sm-12">Phone</div>
         <div class="table-row-column table-center col-md-2 col-sm-12">Location</div>
-        <div class="table-row-column table-center col-md-2 col-sm-12">Status</div>
+        <div class="table-row-column table-center col-md-1 col-sm-12">Status</div>
       </div>
 
 
       <div *ngFor="let user of userlists; let i = index" class="table-row row m-0" (click)="openSummary(user)">
         <div class="table-row-column table-row-index col-md-1 col-sm-12">{{ i + 1 }}</div>
-        <div class="table-row-column table-center col-md-2 col-sm-12"><span class="userpic"></span>{{ user.VehicleName }}</div>
-        <div class="table-row-column table-center col-md-3 col-sm-12"><span class="userpic"></span>{{ user.OwnerName }}</div>
-        <div class="table-row-column table-center col-md-2 col-sm-12">{{ user.phone }}</div>
-        <div class="table-row-column table-center col-md-2 col-sm-12">{{ user.location }}</div>
-        <div class="table-row-column table-center col-md-2 col-sm-12"><span class="legend col_status"></span>{{ user.status }}</div>
+        <div class="table-row-column table-center col-md-2 col-sm-12">
+          <!-- <span class="userpic"></span> -->
+          Bike</div>
+        <div class="table-row-column table-center col-md-3 col-sm-12">
+          <!-- <span class="userpic">
+          <img src="{{user.image}}" />
+        </span> -->
+        {{ user.firstName }}</div>
+        <div class="table-row-column table-center col-md-3 col-sm-12">{{ user.phone }}</div>
+        <div class="table-row-column table-center col-md-2 col-sm-12">{{ user.address.city }}</div>
+        <div class="table-row-column table-center col-md-1 col-sm-12"><span class="legend col_status"></span></div>
       </div>
       
       

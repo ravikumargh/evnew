@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 import { Cell } from 'src/app/entity/cell';
 import { Detail } from 'src/app/entity/detail';
+import { ErrorConfig } from 'src/app/entity/errorConfig';
 
 @Component({
   selector: 'app-summary',
@@ -13,6 +14,7 @@ export class SummaryComponent {
   details: Detail[] = [];
   detail: Detail = new Detail();
   constructor(private dataService: DataService) { }
+  errorConfig = new ErrorConfig();
 
   ngOnInit(): void {
     this.getData();

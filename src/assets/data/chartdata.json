@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Healthy",
+      "value": 1
+    },
+    {
+      "name": "Defective",
+      "value": 0
+    },
+    {
+      "name": "No Signal",
+      "value": 0
+    }
+  ]

@@ -187,7 +187,8 @@ header{
     .user_details{
         background: #fafbff;
         border-radius: 10px;
-        height: calc(100vh - 150px);
+        height: calc(100vh);
+        overflow: auto;
     }
 
 
@@ -208,7 +209,9 @@ header{
         height: 30px;
         border-radius: 50px;
         margin-right: 10px;
+        padding: 0 !important;
         border: 1px solid #ccc;}
+        
 
     .userpic img{ width: 100%;}
 
@@ -239,9 +242,9 @@ header{
 
     .advanced-pie-legend .total-value {
         font-size: 27px!important;
-        left: 75px;
+        left: 10px;
         position: relative!important;
-        top: -5px!important;
+        top: -30px!important;
         width: 210px;
         text-align: center;
     }
@@ -251,10 +254,28 @@ header{
         font-size: 24px;
         margin-bottom: 19px!important;
         position: relative!important;;
-        top: -72px!important;;
-        left: 17%!important;;
+        top: -170px!important;;
+        left: 15%!important;;
     }
 
     .advanced-pie-legend-wrapper {
         height: auto!important;
     }
+
+
+    /* Style the scrollbar track */
+  ::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+  
+  /* Style the scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* color of the scrollbar handle */
+    border-radius: 6px; /* roundness of the scrollbar handle */
+  }
+  
+  /* Style the scrollbar track on hover */
+  ::-webkit-scrollbar-track:hover {
+    background-color: #f5f5f5; /* color of the scrollbar track on hover */
+  }
+  

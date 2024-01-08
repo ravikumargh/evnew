@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from 'src/app/data.service';
 
 @Component({
   selector: 'app-userlist',
@@ -7,86 +8,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./userlist.component.css']
 })
 export class UserlistComponent {
+  userlists: any;
 
-  constructor(private router: Router) { }
+  constructor(private dataService: DataService, private router: Router) {
+    this.getUserData();
+  }
+  getUserData(): void {
+    this.dataService.getUserData().subscribe(
+      (response) => {
+        this.userlists = response;
+        console.log('User Data:', this.userlists);
+      },
+      (error) => {
+        console.error('Error fetching data:', error);
+      }
+    );
+  }
+ 
 
-  userlists = [
-  
-    {
-      "VehicleName": "Hyndai",
-      "OwnerName": "Rakesh",
-      "phone": "9972338280",
-      "location": "Mysore",
-      "status": "cells"
-    },
-
-    {
-      "VehicleName": "Hyndai",
-      "OwnerName": "Rakesh",
-      "phone": "9972338280",
-      "location": "Mysore",
-      "status": "cells"
-    },{
-      "VehicleName": "Hyndai",
-      "OwnerName": "Rakesh",
-      "phone": "9972338280",
-      "location": "Mysore",
-      "status": "cells"
-    },
-
-    {
-      "VehicleName": "Hyndai",
-      "OwnerName": "Rakesh",
-      "phone": "9972338280",
-      "location": "Mysore",
-      "status": "cells"
-    },{
-      "VehicleName": "Hyndai",
-      "OwnerName": "Rakesh",
-      "phone": "9972338280",
-      "location": "Mysore",
-      "status": "cells"
-    },
-
-    {
-      "VehicleName": "Hyndai",
-      "OwnerName": "Rakesh",
-      "phone": "9972338280",
-      "location": "Mysore",
-      "status": "cells"
-    },{
-      "VehicleName": "Hyndai",
-      "OwnerName": "Rakesh",
-      "phone": "9972338280",
-      "location": "Mysore",
-      "status": "cells"
-    },
-
-    {
-      "VehicleName": "Hyndai",
-      "OwnerName": "Rakesh",
-      "phone": "9972338280",
-      "location": "Mysore",
-      "status": "cells"
-    },{
-      "VehicleName": "Hyndai",
-      "OwnerName": "Rakesh",
-      "phone": "9972338280",
-      "location": "Mysore",
-      "status": "cells"
-    },
-
-    {
-      "VehicleName": "Hyndai",
-      "OwnerName": "Rakesh",
-      "phone": "9972338280",
-      "location": "Mysore",
-      "status": "cells"
-    },
-   
-  ];
-
-  openSummary(user:any) {
+  openSummary(user: any) {
     console.log(user)
     this.router.navigate(['/Summary'])
   }
